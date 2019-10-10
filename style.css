@@ -1,0 +1,66 @@
+body {
+    background-image:linear-gradient(to bottom,rgba(26, 85, 39, 0.42),
+    rgba(2, 15, 1, 0.904)), 
+    url('images/garden.jpg');
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+#main-content, #main-header, #sidebar-nav{
+	background-color: #ffffff;
+	opacity: 0.7;
+	padding: 10px;
+	margin: 10px;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 0; 
+    color: rgb(29, 28, 26);
+    font-size: 40px;
+
+}
+.section-content p::first-letter {
+font-size: 5em;
+letter-spacing: 1px;
+color: #8d6e18;
+}
+#sidebar h2.section-title {
+    color: rgb(46, 33, 1); 
+    font-style: italic; 
+    font-size: 30px;
+}
+
+.nav-link-list-item {
+    display: block;
+    margin: 50px 50px 80px 50px;
+    padding: 0px 50px 0px 10px; 
+    font-size: 20px; 
+    border-radius: 1px solid rgb(228, 212, 212);
+  }
+  .citation {
+      font-size: 20px;
+      height: 25px;
+      animation: an 1s ease-out 1 both;
+      display: inline-block;
+  }
+   @keyframes an{
+       from{opacity: 0;
+    transform: perspective(500px)
+translate3d(-35px,-40px,-150px) rotate3d(1, -1, 0,35deg);
+}
+to{
+    opacity: 1;
+    transform: perspective(500px)
+translate(0,0,0);
+}
+   }
+li a {
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    padding:4px 8px;
+    color: #8d6e18;
+}
